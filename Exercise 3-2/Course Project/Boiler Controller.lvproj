@@ -1,5 +1,5 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
-<Project Type="Project" LVVersion="14008000">
+<Project Type="Project" LVVersion="15008000">
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
@@ -40,19 +40,36 @@
 			</Item>
 			<Item Name="Queued Message Handler Documentation.html" Type="Document" URL="../documentation/Queued Message Handler Documentation.html"/>
 		</Item>
+		<Item Name="Boiler" Type="Folder">
+			<Item Name="Boiler Configuration.ctl" Type="VI" URL="../Boiler/Boiler Configuration.ctl"/>
+			<Item Name="Boiler Data.ctl" Type="VI" URL="../Boiler/Boiler Data.ctl"/>
+			<Item Name="Boiler References.ctl" Type="VI" URL="../Boiler/Boiler References.ctl"/>
+			<Item Name="Boiler UI Data.ctl" Type="VI" URL="../Boiler/Boiler UI Data.ctl"/>
+			<Item Name="Boiler.vi" Type="VI" URL="../Boiler/Boiler.vi"/>
+			<Item Name="Change Flame Level - Next.vi" Type="VI" URL="../Boiler/Change Flame Level - Next.vi"/>
+			<Item Name="Change Flame Level.vi" Type="VI" URL="../Boiler/Change Flame Level.vi"/>
+		</Item>
 		<Item Name="Boiler Controller" Type="Folder">
 			<Item Name="Boiler Controller.vi" Type="VI" URL="../Controller/Boiler Controller.vi"/>
 		</Item>
 		<Item Name="Support VIs" Type="Folder">
 			<Property Name="NI.SortType" Type="Int">3</Property>
+			<Item Name="Notiffiers" Type="Folder">
+				<Item Name="Notifires.ctl" Type="VI" URL="../support/Notifires.ctl"/>
+				<Item Name="Create Notifiers.vi" Type="VI" URL="../support/Create Notifiers.vi"/>
+				<Item Name="Controller to Boiler.vi" Type="VI" URL="../support/Controller to Boiler.vi"/>
+				<Item Name="Close Notifiers.vi" Type="VI" URL="../Boiler/Close Notifiers.vi"/>
+			</Item>
 			<Item Name="Message Queue.lvlib" Type="Library" URL="../support/Message Queue/Message Queue.lvlib"/>
 			<Item Name="User Event - Stop.lvlib" Type="Library" URL="../support/User Event - Stop/User Event - Stop.lvlib"/>
 			<Item Name="Boiler System Globals.vi" Type="VI" URL="../support/Boiler System Globals.vi"/>
+			<Item Name="Boiler System Open.vi" Type="VI" URL="../support/Boiler System Open.vi"/>
 		</Item>
 		<Item Name="Type Definitions" Type="Folder">
 			<Item Name="UI Data.ctl" Type="VI" URL="../controls/UI Data.ctl"/>
 		</Item>
 		<Item Name="Main.vi" Type="VI" URL="../Main.vi"/>
+		<Item Name="Notifiers.ctl" Type="VI" URL="../support/Notifiers.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
@@ -88,6 +105,8 @@
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
 				<Item Name="GetHelpDir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetHelpDir.vi"/>
 			</Item>
+			<Item Name="Boiler.lvlib" Type="Library" URL="../Boiler/Boiler.lvlib"/>
+			<Item Name="Notifiers.ctl" Type="VI" URL="../support/Notifiers/Notifiers.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Main Application" Type="EXE">
